@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Generated output
+extracted_pages/
+results.json
+
+# Test PDFs
+input_pdfs/
+
+# VS Code
+.vscode/
