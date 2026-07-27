@@ -49,20 +49,6 @@ Return ONLY valid JSON.
     "important_keywords": [],
     "summary": null
 }
-IMPORTANT:
-For property documents, do not use Control No. as recording_number.
-
-Prefer:
-- Roll No.
-- Recording No.
-- Document No.
-- Instrument No.
-
-If both Roll No. and Control No. exist:
-choose Roll No.
-
-Extract book and page from references like:
-Book XX, Pages XX-XX.
 """
 
     contents = [prompt]

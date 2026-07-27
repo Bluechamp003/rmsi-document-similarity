@@ -19,7 +19,7 @@ def group_documents(all_documents, threshold=75):
             if j in used:
                 continue
 
-            score, reasons = compare_documents(
+            score = compare_documents(
                 all_documents[i]["fingerprint"],
                 all_documents[j]["fingerprint"]
             )

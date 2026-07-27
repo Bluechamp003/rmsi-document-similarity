@@ -193,23 +193,3 @@ def normalize_fingerprint(fp):
     )
 
     return fp
-def normalize_recording_number(value):
-
-    if not value:
-        return None
-
-    if "control" in value.lower():
-        return None
-
-    return value
-def normalize_parcel(value):
-
-    if not value:
-        return ""
-
-    value=value.lower()
-
-    if "parcel" in value:
-        return value.split("parcel")[1].strip()
-
-    return value

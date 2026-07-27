@@ -14,24 +14,17 @@ def process_document(pdf_path):
 
     extracted_text = ""
 
-    page_texts = []
-
     for image in image_files:
 
-        page_text = extract_text_from_image(image)
+        extracted_text += extract_text_from_image(image)
 
-        page_texts.append(page_text)
-
-        extracted_text += page_text
         extracted_text += "\n"
 
     return {
 
         "filename": os.path.basename(pdf_path),
 
-        "pages": page_texts,
-
-        "page_count": len(image_files),
+        "pages": len(image_files),
 
         "has_text": len(extracted_text.strip()) > 0,
 
